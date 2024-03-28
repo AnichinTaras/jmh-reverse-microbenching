@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import java.util.ListIterator;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
@@ -55,17 +54,6 @@ public class ReverseSortBenchmark {
     Collections.sort(sortedList);
     Collections.reverse(sortedList);
     return sortedList;
-  }
-
-  @Benchmark
-  public List<Integer> reverseSortedFourthApproach() {
-    List<Integer> reversedList = new ArrayList<>();
-    Collections.sort(reversedList);
-    ListIterator<Integer> listIterator = reversedList.listIterator(reversedList.size());
-    while (listIterator.hasPrevious()) {
-      reversedList.add(listIterator.previous());
-    }
-    return reversedList;
   }
 
   @Benchmark
