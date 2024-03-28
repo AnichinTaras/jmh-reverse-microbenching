@@ -23,7 +23,7 @@ import org.openjdk.jmh.annotations.State;
 @Fork(value = 1, warmups = 1)
 public class ReverseSortBenchmark {
 
-  @Param({"1000000"})
+  @Param({"10000000"})
   private int size;
 
   private List<Integer> list;
