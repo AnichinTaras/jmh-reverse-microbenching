@@ -57,7 +57,7 @@ public class ReverseSortBenchmark {
   }
 
   @Benchmark
-  public List<Integer> reverseSortedFifthApproach() {
+  public List<Integer> reverseSortedFourthApproach() {
     List<Integer> sortedList = new ArrayList<>(list);
     sortedList.sort(Comparator.reverseOrder());
     return sortedList;
