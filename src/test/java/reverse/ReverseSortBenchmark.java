@@ -20,7 +20,7 @@ import org.openjdk.jmh.annotations.State;
 
 @State(Scope.Benchmark)
 @BenchmarkMode(Mode.AverageTime)
-@OutputTimeUnit(TimeUnit.MILLISECONDS)
+@OutputTimeUnit(TimeUnit.NANOSECONDS)
 @Fork(value = 1, warmups = 1)
 public class ReverseSortBenchmark {
 
